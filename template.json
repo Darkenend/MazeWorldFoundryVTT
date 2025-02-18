@@ -43,8 +43,8 @@
             "maxCondition": 15000,
             "critFail": "ejectFailure",
             "hebiQuote": {
-                "quote": "I don't have a witty description for this weapon.",
-                "author": "Unknown"
+                "quote": "This handgun should need no introduction, but if you lived under a rock for the past 700 years, the Colt M1911A1 is the quintessential .45-caliber semi-automatic pistol, and often the first gun that comes to mind whenever the .45 ACP cartridge is mentioned. You probably learned to shoot with one, as did your parents, your grandparents, your great-grandparents, and probably your entire lineage. Maybe you know a youkai friend who's had one for hundreds of years. Maybe you are that person. It may not be the most modern, or the highest-capacity, but it will always be around and you can always count on it.",
+                "author": "GenericArchangel"
             },
             "mazeCustomsFamily": "1911SS"
         },

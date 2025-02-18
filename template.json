@@ -1,0 +1,94 @@
+{
+    "Actor": {},
+    "Item": {
+        "types": [
+            "ammunition",
+            "clothing",
+            "crafting",
+            "food",
+            "handloading",
+            "loadbearing",
+            "meds",
+            "mushrooms",
+            "ores",
+            "valuables",
+            "weapons",
+            "weaponsAccessories",
+            "misc"
+        ],
+        "templates": {
+            "itemDescription": {
+                "description": "A generic item description."
+            }
+        },
+        "weapons": {
+            "templates": ["itemDescription"],
+            "name": {
+                "manufacturer": "Colt",
+                "model": "1911A1",
+                "country": "USA",
+                "year": 1924
+            },
+            "class": 3,
+            "rarity": {
+                "shopValue": 275,
+                "rarity": -1
+            },
+            "firemode": 10,
+            "stock": 0,
+            "reloading": 1,
+            "plusOne": true,
+            "weight": 3.00,
+            "currentCondition": 15000,
+            "maxCondition": 15000,
+            "critFail": "ejectFailure",
+            "hebiQuote": {
+                "quote": "I don't have a witty description for this weapon.",
+                "author": "Unknown"
+            },
+            "mazeCustomsFamily": "1911SS"
+        },
+        "ammunition": {
+            "templates": ["itemDescription"],
+            "name": ".45 ACP",
+            "category": 0,
+            "recoil": 3,
+            "cost": 2,
+            "weight": 0.02,
+            "quantity": {
+                "box": 50,
+                "can": 500
+            },
+            "damageTable": {
+                "ldv": 2,
+                "c1": 39.00,
+                "c2": 35.00,
+                "a1": 31.00,
+                "a2": 25.00,
+                "a3": 20.00,
+                "a4": 10.00,
+                "a5": 3.00
+            },
+            "handloading": {
+                "assemble": true,
+                "disassemble": true,
+                "primer": "largePistol",
+                "powder": "pistol",
+                "projectile": ".452, 230 grain",
+                "caseCost": 0.417,
+                "standardLoad": 125,
+                "coldLoad": 113,
+                "hotLoad": 138,
+                "superLoad": 150
+            },
+            "rwi": {
+                "referenceBarrelLength": 5,
+                "referenceVelocity": 823,
+                "referenceEnergy": 346,
+                "country": "USA",
+                "year": 1904
+            }
+        }
+    }
+}
+

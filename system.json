@@ -1,0 +1,25 @@
+{
+    "name": "MazeWorldFoundryVTT",
+    "title": "MazeWorld",
+    "description": "A survival-fantasy tabletop roleplaying game set in a procedurally-generated environment of monsters, firearms, competing factions, and a lot of chaos.",
+    "author": "Darkenend",
+    "version": "0.0.1",
+    "minimumCoreVersion": "12.0.0",
+    "compatibleCoreVersion": "12.0.0",
+    "esmodules": [
+        "mazeworld.js"
+    ],
+    "styles": [
+        "mazeworld.css"
+    ],
+    "packs": [
+
+    ],
+    "languages": [
+
+    ],
+    "gridDistance": 5,
+    "gridUnits": "ft",
+    "primaryTokenAttribute": "blood",
+    "initiative": "1d6 + @attributes.agility.value"
+}

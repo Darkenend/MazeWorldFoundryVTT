@@ -18,8 +18,10 @@
     "languages": [
 
     ],
-    "gridDistance": 5,
-    "gridUnits": "ft",
+    "grid": {
+        "distance": 5,
+        "units": "ft"
+    },
     "primaryTokenAttribute": "blood",
     "initiative": "1d6 + @attributes.agility.value"
 }

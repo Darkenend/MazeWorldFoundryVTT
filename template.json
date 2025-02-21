@@ -8,12 +8,12 @@
             "food",
             "handloading",
             "loadbearing",
-            "meds",
-            "mushrooms",
-            "ores",
-            "valuables",
-            "weapons",
-            "weaponsAccessories",
+            "med",
+            "mushroom",
+            "ore",
+            "valuable",
+            "weapon",
+            "weaponAccessory",
             "misc"
         ],
         "templates": {
@@ -21,11 +21,11 @@
                 "description": "A generic item description."
             }
         },
-        "weapons": {
+        "weapon": {
             "templates": ["itemDescription"],
             "name": {
                 "manufacturer": "Colt",
-                "model": "1911A1",
+                "model": "M1911A1",
                 "country": "USA",
                 "year": 1924
             },
@@ -34,14 +34,40 @@
                 "shopValue": 275,
                 "rarity": -1
             },
-            "firemode": 10,
+            "caliber": ".45 ACP",
+            "barrelLength": 5,
+            "firemode": 0,
             "stock": 0,
             "reloading": 1,
             "plusOne": true,
             "weight": 3.00,
-            "currentCondition": 15000,
-            "maxCondition": 15000,
+            "condition": {
+                "currentCondition": 15000,
+                "maxCondition": 15000
+            },
             "critFail": "ejectFailure",
+            "accessoryCompatibility": {
+                "feeding": {
+                    "type": "M1911A1 Magazines",
+                    "standard": "M1911A1 7-round magazine"
+                },
+                "muzzle": {
+                    "type": null,
+                    "standard": null
+                },
+                "optics": {
+                    "type": null,
+                    "standard": null
+                },
+                "underbarrel": {
+                    "type": null,
+                    "standard": null
+                },
+                "lights": {
+                    "type": null,
+                    "standard": null
+                }
+            },
             "hebiQuote": {
                 "quote": "This handgun should need no introduction, but if you lived under a rock for the past 700 years, the Colt M1911A1 is the quintessential .45-caliber semi-automatic pistol, and often the first gun that comes to mind whenever the .45 ACP cartridge is mentioned. You probably learned to shoot with one, as did your parents, your grandparents, your great-grandparents, and probably your entire lineage. Maybe you know a youkai friend who's had one for hundreds of years. Maybe you are that person. It may not be the most modern, or the highest-capacity, but it will always be around and you can always count on it.",
                 "author": "GenericArchangel"
@@ -76,15 +102,20 @@
                 "powder": "pistol",
                 "projectile": ".452, 230 grain",
                 "caseCost": 0.417,
-                "standardLoad": 125,
-                "coldLoad": 113,
-                "hotLoad": 138,
-                "superLoad": 150
+                "load": {
+                    "standard": 125,
+                    "cold": 113,
+                    "hot": 138,
+                    "super": 150
+                }
             },
             "rwi": {
-                "referenceBarrelLength": 5,
-                "referenceVelocity": 823,
-                "referenceEnergy": 346,
+                "reference": {
+                    "exampleGun": "M1911A1",
+                    "barrelLength": 5,
+                    "velocity": 823,
+                    "energy": 346
+                },
                 "country": "USA",
                 "year": 1904
             }

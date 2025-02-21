@@ -2,21 +2,38 @@
     "name": "MazeWorldFoundryVTT",
     "title": "MazeWorld",
     "description": "A survival-fantasy tabletop roleplaying game set in a procedurally-generated environment of monsters, firearms, competing factions, and a lot of chaos.",
-    "author": "Darkenend",
+    "authors": [
+        {
+            "name": "Darkenend",
+            "discord": "darkenend"
+        },
+        {
+            "name": "Tempest",
+            "discord": "sutempest",
+            "url": "https://tempest.nekoweb.org/"
+        }
+    ],
     "version": "0.0.1",
-    "minimumCoreVersion": "12.0.0",
-    "compatibleCoreVersion": "12.0.0",
+    "compatibility": {
+        "minimum": 12,
+        "verified": 12,
+        "maximum": 12
+    },
     "esmodules": [
-        "mazeworld.js"
+        "MzW/mazeworld.js"
     ],
     "styles": [
-        "mazeworld.css"
+        "MzW/mazeworld.css"
     ],
     "packs": [
 
     ],
     "languages": [
-
+        {
+            "lang": "en",
+            "name": "English",
+            "path": "MzW/lang/en.json"
+        }
     ],
     "grid": {
         "distance": 5,

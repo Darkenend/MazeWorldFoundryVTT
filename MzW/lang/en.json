@@ -1,0 +1,200 @@
+{
+    "mzw": {
+        "item": {
+            "itemType": {
+                "ammunition": "Ammunition",
+                "clothing": "Clothing",
+                "crafting": "Crafting Items",
+                "food": "Food",
+                "handloading": "Handloading Items",
+                "loadbearing": "Loadbearing Equipment",
+                "med": "Medical Supplies",
+                "mushroom": "Mushrooms",
+                "ore": "Ores",
+                "valuable": "Valuables",
+                "weapon": "Weapons",
+                "weaponAccessory": "Weapon Accessories",
+                "misc": "Miscellaneous"
+            },
+            "weapon": {
+                "name": {
+                    "self": "Name",
+                    "manufacturer": "Manufacturer",
+                    "model": "Model",
+                    "country": "Country",
+                    "year": "Year"
+                },
+                "caliber": "Caliber",
+                "barrelLength": "Barrel Length",
+                "class": {
+                    "self": "Class",
+                    "1": "Class 1",
+                    "2": "Class 2",
+                    "3": "Class 3",
+                    "4": "Class 4",
+                    "5long": "Class 5, Long",
+                    "5short": "Class 5, Short",
+                    "hand": "Handgear"
+                },
+                "rarity": {
+                    "shopValue": "Shop Value",
+                    "self": "Rarity"
+                },
+                "weaponMode": {
+                    "self": "Weapon Mode",
+                    "fireMode": {
+                        "self": "Fire Mode",
+                        "singleShot": "Single Shot",
+                        "singleShotWithMultiplier": "Single Shot with Multiplier",
+                        "boltAction": "Bolt Action",
+                        "singleAction": "Single Action",
+                        "leverAction": "Lever-Action",
+                        "pumpAction": "Pump-Action",
+                        "pumpActionWithMultiplier": "Pump-Action with Multiplier",
+                        "semiAuto": "Semi-Automatic",
+                        "doubleAction": "Double Action",
+                        "burst": "Burst",
+                        "fullAuto": "Full-Automatic",
+                        "flame": "Flame"
+                    },
+                    "meleeMode": {
+                        "self": "Melee Mode",
+                        "blunt": "Blunt",
+                        "sharp": "Sharp",
+                        "piercing": "Piercing",
+                        "skillType": {
+                            "archery": "Archery",
+                            "axe": "Axe",
+                            "clubOneHanded": "Club, One-Handed",
+                            "clubTwoHanded": "Club, Two-Handed",
+                            "crude": "Crude",
+                            "knife": "Knife",
+                            "swordOneHand": "Sword, One-Handed",
+                            "swordTwoHand": "Sword, Two-Handed",
+                            "polearm": "Polearm",
+                            "lash": "Lash",
+                            "exotic": "Exotic",
+                            "thrown": "Thrown",
+                            "martialArts": "Martial Arts"
+                        }
+                    }
+                },
+                "autoROF": "Auto Rate of Fire",
+                "stock": {
+                    "self": "Stock",
+                    "fixed": "Fixed",
+                    "folding": "Folding",
+                    "retractable": "Retractable",
+                    "foldingRetractable": "Folding/Retractable",
+                    "noStock": "No Stock"
+                },
+                "reloading": "Reloading",
+                "plusOne": "Plus One",
+                "weight": "Weight",
+                "condition": {
+                    "self": "Condition",
+                    "currentCondition": "Current Condition",
+                    "maxCondition": "Max Condition"
+                },
+                "critFail": {
+                    "self": "Critical Failure",
+                    "firearm": {
+                        "ejectFailure": "Eject Failure",
+                        "feedFailure": "Feed Failure",
+                        "fireFailure": "Fire Failure",
+                        "burnFailure": "Burn Failure"
+                    }                    
+                },
+                "accessoryCompatibility": {
+                    "self": "Accessory Compatibility",
+                    "feeding": "Feeding",
+                    "muzzle": "Muzzle",
+                    "optics": "Optics",
+                    "underbarrel": "Underbarrel",
+                    "lights": "Lights",
+                    "standard": "Standard Feeding"
+                },
+                "feedingSystem": {
+                    "self": "Feeding System",
+                    "magazine": "Magazine",
+                    "stripperClip": "Stripper Clip",
+                    "speedloader": "Speedloader",
+                    "moonClip": "Moon Clip",
+                    "speedStrip": "Speed Strip",
+                    "ammoBelt": {
+                        "self": "Ammo Belt",
+                        "nonDisintegrating": "Non-Disintegrating",
+                        "disintegrating": "Disintegrating",
+                        "looseBelt": "Loose Belt"
+                    },
+                    "reloadPack": "Reload Pack"
+                },
+                "mazeCustomsFamily": {
+                    "self": "Maze Customs Family",
+                    "SS1911": "Single Stack 1911",
+                    "DS1911": "Double Stack 1911",
+                    "blackhawk": "Blackhawk",
+                    "redhawk": "Redhawk",
+                    "glockSF": "Glock Short Frame",
+                    "glockLF": "Glock Long Frame",
+                    "mp5": "MP5",
+                    "ar15": "AR-15",
+                    "ak": "AK",
+                    "ar10": "AR-10",
+                    "rem700": "Remington 700",
+                    "ba": "Black Arrow"
+                }
+            },
+            "ammunition": {
+                "name": "Name",
+                "category": "Category",
+                "recoil": "Recoil",
+                "cost": "Cost",
+                "weight": "Weight",
+                "quantity": {
+                    "box": "Box Quantity",
+                    "can": "Can Quantity"
+                },
+                "handloading": {
+                    "self": "Handloading",
+                    "assemble": "Can be assembled?",
+                    "disassemble": "Can be disassembled?",
+                    "primer": "Primer",
+                    "powder": "Powder",
+                    "projectile": "Projectile",
+                    "caseCost": "Cost per Case",
+                    "load": {
+                        "disclaimer": "Examples given for a Standard round.",
+                        "standard": "Standard Load (SP)",
+                        "cold": "Cold Load (-P)",
+                        "hot": "Hot Load (+P)",
+                        "super": "Super Load (+P+)"
+                    }
+                },
+                "rwi": {
+                    "reference": {
+                        "self": "Reference",
+                        "exampleGun": "Example Gun",
+                        "barrelLength": "Example Barrel Length",
+                        "velocity": "Example Velocity",
+                        "energy": "Example Energy"
+                    },
+                    "country": "Country",
+                    "year": "Year"
+                }
+            }
+        },
+        "genericTerms": {
+            "self": "Generic Terms",
+            "yes": "Yes",
+            "no": "No",
+            "notApplicable": "N/A",
+            "none": "None",
+            "unknown": "Unknown",
+            "stats": "Stats",
+            "description": "Description",
+            "notes": "Notes",
+            "rwi": "Real World Information"
+        }
+    }
+}

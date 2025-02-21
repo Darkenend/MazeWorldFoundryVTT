@@ -1,0 +1,36 @@
+:root {
+    --brandBlack: #121619;
+    --brandGold: #F5C400;
+    --brandRed: #9B1D20;
+    --brandClear: #ECE5F0;
+    --brandGrey: #A5A5A5;
+    --brandBlackAlpha: #121619B0;
+    --brandGoldAlpha: #F5C400B0;
+    --brandRedAlpha: #9B1D20B0;
+    --brandClearAlpha: #ECE5F0B0;
+    --brandGreyAlpha: #A5A5A5B0;
+}
+
+.item-header {
+    color: var(--brandBlack);
+    background-color: var(--brandGoldAlpha);
+    text-align: center;
+    padding: 5px;
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.item-label {
+    font-weight: bold;
+    padding: 2px;
+    margin: 0;
+    font-size: 1em;
+}
+
+.item-value {
+    font-weight: bold;
+    padding: 2px;
+    margin: 0;
+    font-size: 1em;
+}

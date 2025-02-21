@@ -1,0 +1,159 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <header class="sheet-header">
+        <img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" widtd="64"/>
+        <h1><input name="name" type="text" value="{{item.name}}" placeholder="{{ localize 'Name' }}"/></h1>
+    </header>
+    <div>
+        <table>
+            <tr>
+                <td colspan="5" class="item-header">
+                    {{ localize "mzw.genericTerms.rwi"}}
+                </td>
+            </tr>
+            <tr>
+                <td class="item-label">
+                    {{ localize "mzw.item.weapon.name.manufacturer" }}
+                </td>
+                <td class="item-label">
+                    {{ localize "mzw.item.weapon.name.model" }}
+                </td>
+                <td class="item-label">
+                    {{ localize "mzw.item.weapon.caliber" }}
+                </td>
+            </tr>
+            <tr>
+                <td class="item-value">
+                    <input type="text" name="name.manufacturer" value="{{ item.name.manufacturer }}"/>
+                </td>
+                <td class="item-value">
+                    <input type="text" name="name.model" value="{{ item.name.model }}"/>
+                </td>
+                <td class="item-value">
+                    <input type="text" name="caliber" value="{{ item.caliber }}"/>
+                </td>
+                <td class="item-value">
+                    <select name="class">
+                        {{#select class}}
+                        {{#each config.weapon.class as |name type|}}
+                        <option value="{{type}}">{{ localize name }}</option>
+                        {{/each}}
+                        {{/select}}
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5" class="item-header">
+                    {{ localize "mzw.genericTerms.stats" }}
+                </td>
+            </tr>
+            <tr>
+                <td class="item-label">
+                    {{ localize "mzw.item.weapon.weaponMode.fireMode.self"}}
+                </td>
+                <td class="item-value">
+                    <select name="class">
+                        {{#select class}}
+                        {{#each config.weapon.weaponMode.fireMode as |name type|}}
+                        <option value="{{type}}">{{ localize name }}</option>
+                        {{/each}}
+                        {{/select}}
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="item-label">
+                    {{ localize "mzw.item.weapon.barrelLength" }}
+                </td>
+                <td class="item-value">
+                    <input type="number" name="barrelLength" step="0.01" value="{{ item.barrelLength }}"/>
+                </td>
+            </tr>
+            <tr>
+                <td class="item-label">
+                    {{ localize "mzw.item.weapon.feedingSystem.self" }}
+                </td>
+                <td class="item-value">
+                    <select name="class">
+                        {{#select class}}
+                        {{#each config.weapon.feedingSystem as |name type|}}
+                        <option value="{{type}}">{{ localize name }}</option>
+                        {{/each}}
+                        {{/select}}
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="item-label">
+                    {{ localize "mzw.item.weapon.plusOne"}}
+                </td>
+                <td class="item-value">
+                    <input type="checkbox" name="plusOne" {{ checked item.plusOne }}/>
+                </td>
+            </tr>
+            <tr>
+                <td class="item-label">
+                    {{ localize "mzw.item.weapon.critFail.self"}}
+                </td>
+                <td class="item-value">
+                    <select name="class">
+                        {{#select class}}
+                        {{#each config.weapon.critFail.firearm as |name type|}}
+                        <option value="{{type}}">{{ localize name }}</option>
+                        {{/each}}
+                        {{/select}}
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="item-label">
+                    {{ localize "mzw.item.weapon.stock.self" }}
+                </td>
+                <td class="item-value">
+                    <select name="class">
+                        {{#select class}}
+                        {{#each config.weapon.stock as |name type|}}
+                        <option value="{{type}}">{{ localize name }}</option>
+                        {{/each}}
+                        {{/select}}
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="item-label">
+                    {{ localize "mzw.item.weapon.weight"}}
+                </td>
+                <td class="item-value">
+                    <input type="number" name="weight" step="1" value="{{ item.weight }}"/>
+                </td>
+            </tr>
+            <tr>
+                <td class="item-label">
+                    {{ localize "mzw.item.weapon.condition.self"}}
+                </td>
+                <td class="item-label">
+                    {{ localize "mzw.item.weapon.condition.currentCondition" }}
+                </td>
+                <td class="item-value">
+                    <input type="number" name="condition.currentCondition" step="1" value="{{ item.condition.currentCondition }}"/>
+                </td>
+                <td class="item-label">
+                    {{ localize "mzw.item.weapon.condition.maxCondition" }}
+                </td>
+                <td class="item-value">
+                    <input type="number" name="condition.maxCondition" step="1" value="{{ item.condition.maxCondition }}"/>
+                </td>
+            </tr>
+            <tr>
+                <td class="item-label">
+                    {{ localize "mzw.item.weapon.rarity.shopValue"}} / {{ localize "mzw.item.weapon.rarity.self"}}
+                </td>
+                <td class="item-value">
+                    <input type="number" name="rarity.shopValue" step="1" value="{{ item.rarity.shopValue }}"/>
+                </td>
+                <td class="item-value">
+                    <input type="number" name="rarity.rarity" step="1" value="{{ item.rarity.rarity }}"/>
+                </td>
+            </tr>
+        </table>
+    </div>
+</form>

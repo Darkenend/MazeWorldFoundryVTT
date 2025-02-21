@@ -3,4 +3,6 @@ A project that aims to bring the MazeWorld TTRPG to FoundryVTT
 
 ## Development
 
-Please please please, add your foundry core to the project BEFORE developing. It'll make sure you have a better code-completion and you won't hate yourself.
+The structure is pretty much following [Git Flow](https://danielkummer.github.io/git-flow-cheatsheet/), and please if you're interested, get in touch and just try to follow common sense?
+
+This is not really organized.

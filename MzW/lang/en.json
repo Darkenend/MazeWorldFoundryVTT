@@ -18,16 +18,11 @@
             },
             "weapon": {
                 "name": {
-                    "self": "Name",
                     "manufacturer": "Manufacturer",
-                    "model": "Model",
-                    "country": "Country",
-                    "year": "Year"
+                    "model": "Model"
                 },
-                "caliber": "Caliber",
                 "barrelLength": "Barrel Length",
                 "class": {
-                    "self": "Class",
                     "1": "Class 1",
                     "2": "Class 2",
                     "3": "Class 3",
@@ -59,9 +54,6 @@
                     },
                     "meleeMode": {
                         "self": "Melee Mode",
-                        "blunt": "Blunt",
-                        "sharp": "Sharp",
-                        "piercing": "Piercing",
                         "skillType": {
                             "archery": "Archery",
                             "axe": "Axe",
@@ -73,7 +65,6 @@
                             "swordTwoHand": "Sword, Two-Handed",
                             "polearm": "Polearm",
                             "lash": "Lash",
-                            "exotic": "Exotic",
                             "thrown": "Thrown",
                             "martialArts": "Martial Arts"
                         }
@@ -90,7 +81,6 @@
                 },
                 "reloading": "Reloading",
                 "plusOne": "Plus One",
-                "weight": "Weight",
                 "condition": {
                     "self": "Condition",
                     "currentCondition": "Current Condition",
@@ -146,11 +136,11 @@
                 }
             },
             "ammunition": {
-                "name": "Name",
-                "category": "Category",
+                "caliber": {
+                    "type": "Type",
+                    "basePain": "Base Pain"
+                },
                 "recoil": "Recoil",
-                "cost": "Cost",
-                "weight": "Weight",
                 "quantity": {
                     "box": "Box Quantity",
                     "can": "Can Quantity"
@@ -160,7 +150,12 @@
                     "assemble": "Can be assembled?",
                     "disassemble": "Can be disassembled?",
                     "primer": "Primer",
-                    "powder": "Powder",
+                    "powder": {
+                        "self": "Powder",
+                        "reg": "Regular powder",
+                        "surp": "Surplus powder",
+                        "prem": "Premium powder"
+                    },
                     "projectile": "Projectile",
                     "caseCost": "Cost per Case",
                     "load": {
@@ -171,6 +166,161 @@
                         "super": "Super Load (+P+)"
                     }
                 },
+                "projectiles": "Projectiles",
+                "projectileType": {
+                    "fmj": {
+                        "code": "FMJ",
+                        "name": "Full Metal Jacket"
+                    },
+                    "t": {
+                        "code": "T",
+                        "name": "Tracer"
+                    },
+                    "match": {
+                        "code": "Match",
+                        "name": "Match-grade"
+                    },
+                    "lead": {
+                        "code": "Lead",
+                        "name": "Cast lead"
+                    },
+                    "lswc": {
+                        "code": "LSWC",
+                        "name": "Cast lead, semi-wadcutter"
+                    },
+                    "jhp": {
+                        "code": "JHP",
+                        "name": "Jacketed hollow point"
+                    },
+                    "jsp": {
+                        "code": "JSP",
+                        "name": "Jacketed soft point"
+                    },
+                    "lswchp": {
+                        "code": "LSWCHP",
+                        "name": "Cast lead, semi-wadcutter hollow point"
+                    },
+                    "hpx": {
+                        "code": "HPX",
+                        "name": "Hollow point, eXtreme"
+                    },
+                    "ap": {
+                        "code": "AP",
+                        "name": "Armor piercing"
+                    },
+                    "sap": {
+                        "code": "SAP",
+                        "name": "Semi-armor piercing"
+                    },
+                    "apx": {
+                        "code": "APX",
+                        "name": "Armor piercing, eXtreme"
+                    },
+                    "api": {
+                        "code": "API",
+                        "name": "Armor piercing, Incendiary"
+                    },
+                    "sf": {
+                        "code": "SF",
+                        "name": "Sintered metal, Frangible"
+                    },
+                    "uhs": {
+                        "code": "UHS",
+                        "name": "Ultra High Speed"
+                    },
+                    "buck": {
+                        "code": "Buck",
+                        "name": "Lead buckshot"
+                    },
+                    "pBuck": {
+                        "code": "P-Buck",
+                        "name": "Plated buckshot"
+                    },
+                    "rBuck": {
+                        "code": "R-Buck",
+                        "name": "Rubber buckshot"
+                    },
+                    "dBuck": {
+                        "code": "D-Buck",
+                        "name": "Dragon's buckshot"
+                    },
+                    "slug": {
+                        "code": "Slug",
+                        "name": "Lead slug"
+                    },
+                    "fSlug": {
+                        "code": "F-Slug",
+                        "name": "Full metal jacketed slug"
+                    },
+                    "rSlug": {
+                        "code": "R-Slug",
+                        "name": "Rubber slug"
+                    },
+                    "iSlug": {
+                        "code": "I-Slug",
+                        "name": "Incendiary slug"
+                    },
+                    "hpSlug": {
+                        "code": "HP-Slug",
+                        "name": "Hollow-point jacketed slug"
+                    },
+                    "apSlug": {
+                        "code": "AP-Slug",
+                        "name": "Armor-piercing slug"
+                    },
+                    "flech": {
+                        "code": "Flech",
+                        "name": "Flechette"
+                    },
+                    "frag": {
+                        "code": "FRAG",
+                        "name": "FRAG-12 explosive slug"
+                    },
+                    "coin": {
+                        "code": "Coin",
+                        "name": "Coin shot"
+                    },
+                    "fbang": {
+                        "code": "FBANG",
+                        "name": "Flashbang canister"
+                    },
+                    "tgas": {
+                        "code": "TGAS",
+                        "name": "Tear gas canister"
+                    },
+                    "nrm": {
+                        "code": "NRM",
+                        "name": "Normal head"
+                    },
+                    "brd": {
+                        "code": "BRD",
+                        "name": "Broadhead"
+                    },
+                    "fld": {
+                        "code": "FLD",
+                        "name": "Field head"
+                    },
+                    "imp": {
+                        "code": "IMP",
+                        "name": "Improvised field head"
+                    },
+                    "vnm": {
+                        "code": "VNM",
+                        "name": "Venom head"
+                    },
+                    "cya": {
+                        "code": "CYA",
+                        "name": "Cyanide head"
+                    },
+                    "tnq": {
+                        "code": "TNQ",
+                        "name": "Tranquilizing head"
+                    },
+                    "xpl": {
+                        "code": "XPL",
+                        "name": "Explosive head"
+                    }
+                },
                 "rwi": {
                     "reference": {
                         "self": "Reference",
@@ -178,9 +328,7 @@
                         "barrelLength": "Example Barrel Length",
                         "velocity": "Example Velocity",
                         "energy": "Example Energy"
-                    },
-                    "country": "Country",
-                    "year": "Year"
+                    }
                 }
             }
         },
@@ -190,11 +338,55 @@
             "no": "No",
             "notApplicable": "N/A",
             "none": "None",
+            "effects": "Effects",
             "unknown": "Unknown",
             "stats": "Stats",
             "description": "Description",
             "notes": "Notes",
-            "rwi": "Real World Information"
+            "rwi": "Real World Information",
+            "notation": "Notation",
+            "imperial": "Imperial",
+            "metric": "Metric",
+            "caliber": "Caliber",
+            "country": "Country",
+            "year": "Year",
+            "class": "Class",
+            "pistol": "Pistol",
+            "rifle": "Rifle",
+            "shotgun": "Shotgun",
+            "arrow": "Arrow",
+            "smallBolt": "Small Bolt",
+            "largeBolt": "Large Bolt",
+            "exotic": "Exotic",
+            "value": "Value",
+            "cost": "Cost",
+            "weight": "Weight",
+            "name": "Name",
+            "damageTable": {
+                "damageType": {
+                    "self": "Damage Type",
+                    "blunt": "Blunt",
+                    "sharp": "Sharp",
+                    "piercing": "Piercing",
+                    "bullet": "Bullet",
+                    "explosion": "Explosion",
+                    "spec": "Special",
+                    "specFire": "Special-Fire",
+                    "specAqua": "Special-Aqua",
+                    "specIce": "Special-Ice",
+                    "specElec": "Special-Electric",
+                    "specAcid": "Special-Acid"
+                },
+                "ldv": "Limb Damage Value",
+                "c1": "Clothing 1",
+                "c2": "Clothing 2",
+                "a1": "Armor 1",
+                "a2": "Armor 2",
+                "a3": "Armor 3",
+                "a4": "Armor 4",
+                "a5": "Armor 5"
+            },
+            "alternateNames": "Alternate Names"
         }
     }
 }

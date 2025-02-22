@@ -15,12 +15,206 @@ MzW.itemType = {
     misc: 'mzw.item.itemType.misc'
 }
 
+MzW.ammunition = {
+    caliber: {
+        type: 'mzw.item.ammunition.caliber.type',
+        name: 'mzw.genericTerms.name',
+        basePain: 'mzw.item.ammunition.caliber.basePain',
+        notation: 'mzw.genericTerms.notation',
+        recoil: 'mzw.item.ammunition.recoil',
+        alternateNames: 'mzw.genericTerms.alternateNames'
+    },
+    damageTable: {
+        type: 'mzw.genericTerms.damageTable.damageType.self',
+        ldv: 'mzw.genericTerms.damageTable.ldv',
+        c1: 'mzw.genericTerms.damageTable.c1',
+        c2: 'mzw.genericTerms.damageTable.c2',
+        a1: 'mzw.genericTerms.damageTable.a1',
+        a2: 'mzw.genericTerms.damageTable.a2',
+        a3: 'mzw.genericTerms.damageTable.a3',
+        a4: 'mzw.genericTerms.damageTable.a4',
+        a5: 'mzw.genericTerms.damageTable.a5'
+    },
+    projectileType: {
+        fmj: {
+            code: 'mzw.item.ammunition.projectileType.fmj.code',
+            name: 'mzw.item.ammunition.projectileType.fmj.name'
+        },
+        t: {
+            code: 'mzw.item.ammunition.projectileType.t.code',
+            name: 'mzw.item.ammunition.projectileType.t.name'
+        },
+        match: {
+            code: 'mzw.item.ammunition.projectileType.match.code',
+            name: 'mzw.item.ammunition.projectileType.match.name'
+        },
+        lead: {
+            code: 'mzw.item.ammunition.projectileType.lead.code',
+            name: 'mzw.item.ammunition.projectileType.lead.name'
+        },
+        lswc: {
+            code: 'mzw.item.ammunition.projectileType.lswc.code',
+            name: 'mzw.item.ammunition.projectileType.lswc.name'
+        },
+        jhp: {
+            code: 'mzw.item.ammunition.projectileType.jhp.code',
+            name: 'mzw.item.ammunition.projectileType.jhp.name'
+        },
+        jsp: {
+            code: 'mzw.item.ammunition.projectileType.jsp.code',
+            name: 'mzw.item.ammunition.projectileType.jsp.name'
+        },
+        lswchp: {
+            code: 'mzw.item.ammunition.projectileType.lswchp.code',
+            name: 'mzw.item.ammunition.projectileType.lswchp.name'
+        },
+        hpx: {
+            code: 'mzw.item.ammunition.projectileType.hpx.code',
+            name: 'mzw.item.ammunition.projectileType.hpx.name'
+        },
+        ap: {
+            code: 'mzw.item.ammunition.projectileType.ap.code',
+            name: 'mzw.item.ammunition.projectileType.ap.name'
+        },
+        sap: {
+            code: 'mzw.item.ammunition.projectileType.sap.code',
+            name: 'mzw.item.ammunition.projectileType.sap.name'
+        },
+        apx: {
+            code: 'mzw.item.ammunition.projectileType.apx.code',
+            name: 'mzw.item.ammunition.projectileType.apx.name'
+        },
+        api: {
+            code: 'mzw.item.ammunition.projectileType.api.code',
+            name: 'mzw.item.ammunition.projectileType.api.name'
+        },
+        sf: {
+            code: 'mzw.item.ammunition.projectileType.sf.code',
+            name: 'mzw.item.ammunition.projectileType.sf.name'
+        },
+        uhs: {
+            code: 'mzw.item.ammunition.projectileType.uhs.code',
+            name: 'mzw.item.ammunition.projectileType.uhs.name'
+        },
+        buck: {
+            code: 'mzw.item.ammunition.projectileType.buck.code',
+            name: 'mzw.item.ammunition.projectileType.buck.name'
+        },
+        pBuck: {
+            code: 'mzw.item.ammunition.projectileType.pBuck.code',
+            name: 'mzw.item.ammunition.projectileType.pBuck.name'
+        },
+        rBuck: {
+            code: 'mzw.item.ammunition.projectileType.rBuck.code',
+            name: 'mzw.item.ammunition.projectileType.rBuck.name'
+        },
+        dBuck: {
+            code: 'mzw.item.ammunition.projectileType.dBuck.code',
+            name: 'mzw.item.ammunition.projectileType.dBuck.name'
+        },
+        slug: {
+            code: 'mzw.item.ammunition.projectileType.slug.code',
+            name: 'mzw.item.ammunition.projectileType.slug.name'
+        },
+        fSlug: {
+            code: 'mzw.item.ammunition.projectileType.fSlug.code',
+            name: 'mzw.item.ammunition.projectileType.fSlug.name'
+        },
+        rSlug: {
+            code: 'mzw.item.ammunition.projectileType.rSlug.code',
+            name: 'mzw.item.ammunition.projectileType.rSlug.name'
+        },
+        iSlug: {
+            code: 'mzw.item.ammunition.projectileType.iSlug.code',
+            name: 'mzw.item.ammunition.projectileType.iSlug.name'
+        },
+        hpSlug: {
+            code: 'mzw.item.ammunition.projectileType.hpSlug.code',
+            name: 'mzw.item.ammunition.projectileType.hpSlug.name'
+        },
+        apSlug: {
+            code: 'mzw.item.ammunition.projectileType.apSlug.code',
+            name: 'mzw.item.ammunition.projectileType.apSlug.name'
+        },
+        flech: {
+            code: 'mzw.item.ammunition.projectileType.flech.code',
+            name: 'mzw.item.ammunition.projectileType.flech.name'
+        },
+        frag: {
+            code: 'mzw.item.ammunition.projectileType.frag.code',
+            name: 'mzw.item.ammunition.projectileType.frag.name'
+        },
+        coin: {
+            code: 'mzw.item.ammunition.projectileType.coin.code',
+            name: 'mzw.item.ammunition.projectileType.coin.name'
+        },
+        fbang: {
+            code: 'mzw.item.ammunition.projectileType.fbang.code',
+            name: 'mzw.item.ammunition.projectileType.fbang.name'
+        },
+        tgas: {
+            code: 'mzw.item.ammunition.projectileType.tgas.code',
+            name: 'mzw.item.ammunition.projectileType.tgas.name'
+        },
+        nrm: {
+            code: 'mzw.item.ammunition.projectileType.nrm.code',
+            name: 'mzw.item.ammunition.projectileType.nrm.name'
+        },
+        brd: {
+            code: 'mzw.item.ammunition.projectileType.brd.code',
+            name: 'mzw.item.ammunition.projectileType.brd.name'
+        },
+        fld: {
+            code: 'mzw.item.ammunition.projectileType.fld.code',
+            name: 'mzw.item.ammunition.projectileType.fld.name'
+        },
+        imp: {
+            code: 'mzw.item.ammunition.projectileType.imp.code',
+            name: 'mzw.item.ammunition.projectileType.imp.name'
+        },
+        vnm: {
+            code: 'mzw.item.ammunition.projectileType.vnm.code',
+            name: 'mzw.item.ammunition.projectileType.vnm.name'
+        },
+        cya: {
+            code: 'mzw.item.ammunition.projectileType.cya.code',
+            name: 'mzw.item.ammunition.projectileType.cya.name'
+        },
+        tnq: {
+            code: 'mzw.item.ammunition.projectileType.tnq.code',
+            name: 'mzw.item.ammunition.projectileType.tnq.name'
+        },
+        xpl: {
+            code: 'mzw.item.ammunition.projectileType.xpl.code',
+            name: 'mzw.item.ammunition.projectileType.xpl.name'
+        },
+        effects: 'mzw.genericTerms.effects',
+        value: 'mzw.genericTerms.value',
+        description: 'mzw.genericTerms.description',
+        notes: 'mzw.genericTerms.notes',
+        projectiles: 'mzw.item.ammunition.projectiles'
+    },
+    powder: {
+        pressure: {
+            standard: 'mzw.item.ammunition.handloading.load.standard',
+            cold: 'mzw.item.ammunition.handloading.load.cold',
+            hot: 'mzw.item.ammunition.handloading.load.hot',
+            super: 'mzw.item.ammunition.handloading.load.super'
+        },
+        quality: {
+            reg: 'mzw.item.ammunition.handloading.powder.reg',
+            surp: 'mzw.item.ammunition.handloading.powder.surp',
+            prem: 'mzw.item.ammunition.handloading.powder.prem'
+        }
+    }
+}
+
 MzW.weapon = {
     name: {
         manufacturer: 'mzw.item.weapon.name.manufacturer',
         model: 'mzw.item.weapon.name.model',
-        country: 'mzw.item.weapon.name.country',
-        year: 'mzw.item.weapon.name.year'
+        country: 'mzw.genericTerms.country',
+        year: 'mzw.genericTerms.year'
     },
     class: {
         class1: 'mzw.item.weapon.class.1',
@@ -31,7 +225,7 @@ MzW.weapon = {
         class5short: 'mzw.item.weapon.class.5short',
         classHand: 'mzw.item.weapon.class.hand'
     },
-    caliber: 'mzw.item.weapon.caliber',
+    caliber: 'mzw.genericTerms.caliber',
     weaponMode: {
         fireMode: {
             singleShot: 'mzw.item.weapon.weaponMode.fireMode.singleShot',
@@ -49,9 +243,9 @@ MzW.weapon = {
             notApplicable: 'mzw.genericTerms.notApplicable'
         },
         meleeMode: {
-            blunt: 'mzw.item.weapon.weaponMode.meleeMode.blunt',
-            sharp: 'mzw.item.weapon.weaponMode.meleeMode.sharp',
-            piercing: 'mzw.item.weapon.weaponMode.meleeMode.piercing',
+            blunt: 'mzw.genericTerms.damageTable.damageType.blunt',
+            sharp: 'mzw.genericTerms.damageTable.damageType.sharp',
+            piercing: 'mzw.genericTerms.damageTable.damageType.piercing',
             notApplicable: 'mzw.genericTerms.notApplicable',
             skillType: {
                 archery: 'mzw.item.weapon.meleeMode.skillType.archery',
@@ -64,7 +258,7 @@ MzW.weapon = {
                 swordTwoHand: 'mzw.item.weapon.meleeMode.skillType.swordTwoHand',
                 polearm: 'mzw.item.weapon.meleeMode.skillType.polearm',
                 lash: 'mzw.item.weapon.meleeMode.skillType.lash',
-                exotic: 'mzw.item.weapon.meleeMode.skillType.exotic',
+                exotic: 'mzw.genericTerms.exotic',
                 thrown: 'mzw.item.weapon.meleeMode.skillType.thrown',
                 martialArts: 'mzw.item.weapon.meleeMode.skillType.martialArts'
             }
@@ -104,7 +298,7 @@ MzW.weapon = {
         shopValue: 'mzw.item.weapon.rarity.shopValue',
         rarity: 'mzw.item.weapon.rarity.self',
     },
-    weight: 'mzw.item.weapon.weight',
+    weight: 'mzw.genericTerms.weight',
     condition: {
         current: 'mzw.item.weapon.condition.current',
         max: 'mzw.item.weapon.condition.max'

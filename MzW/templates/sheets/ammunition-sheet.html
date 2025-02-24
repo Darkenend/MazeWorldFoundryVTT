@@ -10,11 +10,19 @@
                     {{ localize "mzw.genericTerms.category" }}
                 </td>
                 <td>
-                    <select name="type">
-                        {{selectOptions config.ammunition.type selected=value localize=true }}
+                    <select name="category">
+                        {{selectOptions config.ammunition.category selected=value localize=true }}
                     </select>
                 </td>
             </tr>
         </table>
     </div>
+    {{#if (eq this.ammunition.category pistol) }}
+        {{ log this }}
+        {{> "systems/MazeWorldFoundryVTT/MzW/templates/sheets/partials/ammunition/pistol.hbs" this}}
+    {{else }}
+        <div class="item-label">
+            NOT PISTOL
+        </div>
+    {{/if }}
 </form>

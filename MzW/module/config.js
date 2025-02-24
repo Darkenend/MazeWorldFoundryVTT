@@ -16,7 +16,7 @@ MzW.itemType = {
 }
 
 MzW.ammunition = {
-    type: {
+    category: {
         pistol: 'mzw.genericTerms.pistol',
         rifle: 'mzw.genericTerms.rifle',
         shotgun: 'mzw.genericTerms.shotgun',

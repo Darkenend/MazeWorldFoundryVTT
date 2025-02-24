@@ -1,6 +1,6 @@
 <form class="{{cssClass}}" autocomplete="off">
     <header class="sheet-header">
-        <img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" widtd="64"/>
+        <img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64"/>
         <h1><input name="name" type="text" value="{{item.name}}" placeholder="{{ localize 'Name' }}"/></h1>
     </header>
     <div>
@@ -18,26 +18,22 @@
                     {{ localize "mzw.item.weapon.name.model" }}
                 </td>
                 <td class="item-label">
-                    {{ localize "mzw.item.weapon.caliber" }}
+                    {{ localize "mzw.genericTerms.caliber" }}
                 </td>
             </tr>
             <tr>
                 <td class="item-value">
-                    <input type="text" name="name.manufacturer" value="{{ item.name.manufacturer }}"/>
+                    <input type="text" name="manufacturer" value="{{ item.manufacturer }}"/>
                 </td>
                 <td class="item-value">
-                    <input type="text" name="name.model" value="{{ item.name.model }}"/>
+                    <input type="text" name="model" value="{{ item.model }}"/>
                 </td>
                 <td class="item-value">
                     <input type="text" name="caliber" value="{{ item.caliber }}"/>
                 </td>
                 <td class="item-value">
                     <select name="class">
-                        {{#select class}}
-                        {{#each config.weapon.class as |name type|}}
-                        <option value="{{type}}">{{ localize name }}</option>
-                        {{/each}}
-                        {{/select}}
+                        {{selectOptions config.weapon.class selected=value localize=true }}
                     </select>
                 </td>
             </tr>
@@ -52,11 +48,7 @@
                 </td>
                 <td class="item-value">
                     <select name="class">
-                        {{#select class}}
-                        {{#each config.weapon.weaponMode.fireMode as |name type|}}
-                        <option value="{{type}}">{{ localize name }}</option>
-                        {{/each}}
-                        {{/select}}
+                        {{selectOptions config.weapon.weaponMode.fireMode selected=value localize=true }}
                     </select>
                 </td>
             </tr>
@@ -74,11 +66,7 @@
                 </td>
                 <td class="item-value">
                     <select name="class">
-                        {{#select class}}
-                        {{#each config.weapon.feedingSystem as |name type|}}
-                        <option value="{{type}}">{{ localize name }}</option>
-                        {{/each}}
-                        {{/select}}
+                        {{selectOptions config.weapon.feedingSystem selected=value localize=true }}
                     </select>
                 </td>
             </tr>
@@ -96,11 +84,7 @@
                 </td>
                 <td class="item-value">
                     <select name="class">
-                        {{#select class}}
-                        {{#each config.weapon.critFail.firearm as |name type|}}
-                        <option value="{{type}}">{{ localize name }}</option>
-                        {{/each}}
-                        {{/select}}
+                        {{selectOptions config.weapon.critFail.firearm selected=value localize=true }}
                     </select>
                 </td>
             </tr>
@@ -110,17 +94,13 @@
                 </td>
                 <td class="item-value">
                     <select name="class">
-                        {{#select class}}
-                        {{#each config.weapon.stock as |name type|}}
-                        <option value="{{type}}">{{ localize name }}</option>
-                        {{/each}}
-                        {{/select}}
+                        {{selectOptions config.weapon.stock selected=value localize=true }}
                     </select>
                 </td>
             </tr>
             <tr>
                 <td class="item-label">
-                    {{ localize "mzw.item.weapon.weight"}}
+                    {{ localize "mzw.genericTerms.weight"}}
                 </td>
                 <td class="item-value">
                     <input type="number" name="weight" step="1" value="{{ item.weight }}"/>

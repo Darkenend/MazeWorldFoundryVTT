@@ -16,8 +16,16 @@ MzW.itemType = {
 }
 
 MzW.ammunition = {
+    type: {
+        pistol: 'mzw.genericTerms.pistol',
+        rifle: 'mzw.genericTerms.rifle',
+        shotgun: 'mzw.genericTerms.shotgun',
+        arrow: 'mzw.genericTerms.arrow',
+        smallBolt: 'mzw.genericTerms.smallBolt',
+        largeBolt: 'mzw.genericTerms.largeBolt',
+        reloadPack: 'mzw.genericTerms.reloadPack'
+    },
     caliber: {
-        type: 'mzw.item.ammunition.caliber.type',
         name: 'mzw.genericTerms.name',
         basePain: 'mzw.item.ammunition.caliber.basePain',
         notation: 'mzw.genericTerms.notation',
@@ -210,12 +218,10 @@ MzW.ammunition = {
 }
 
 MzW.weapon = {
-    name: {
-        manufacturer: 'mzw.item.weapon.name.manufacturer',
-        model: 'mzw.item.weapon.name.model',
-        country: 'mzw.genericTerms.country',
-        year: 'mzw.genericTerms.year'
-    },
+    manufacturer: 'mzw.item.weapon.name.manufacturer',
+    model: 'mzw.item.weapon.name.model',
+    country: 'mzw.genericTerms.country',
+    year: 'mzw.genericTerms.year',
     class: {
         class1: 'mzw.item.weapon.class.1',
         class2: 'mzw.item.weapon.class.2',

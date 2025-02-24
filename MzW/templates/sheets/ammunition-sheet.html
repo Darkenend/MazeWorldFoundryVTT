@@ -17,12 +17,36 @@
             </tr>
         </table>
     </div>
+    <!-- I swear to god I wanna commit the rope -->
     {{#if (eq this.ammunition.category pistol) }}
-        {{ log this }}
         {{> "systems/MazeWorldFoundryVTT/MzW/templates/sheets/partials/ammunition/pistol.hbs" this}}
     {{else }}
-        <div class="item-label">
-            NOT PISTOL
-        </div>
+        {{#if (eq this.ammunition.category rifle) }}
+            {{> "systems/MazeWorldFoundryVTT/MzW/templates/sheets/partials/ammunition/rifle.hbs" this}}
+        {{else }}
+            {{#if (eq this.ammunition.category shotgun) }}
+                {{> "systems/MazeWorldFoundryVTT/MzW/templates/sheets/partials/ammunition/shotgun.hbs" this}}
+            {{else }}
+                {{#if (eq this.ammunition.category arrow) }}
+                    {{> "systems/MazeWorldFoundryVTT/MzW/templates/sheets/partials/ammunition/arrow.hbs" this}}
+                {{else }}
+                    {{#if (eq this.ammunition.category smallBolt) }}
+                        {{> "systems/MazeWorldFoundryVTT/MzW/templates/sheets/partials/ammunition/smallBolt.hbs" this}}
+                    {{else }}
+                        {{#if (eq this.ammunition.category largeBolt) }}
+                            {{> "systems/MazeWorldFoundryVTT/MzW/templates/sheets/partials/ammunition/largeBolt.hbs" this}}
+                        {{else }}
+                            {{#if (eq this.ammunition.category largeBolt) }}
+                                {{> "systems/MazeWorldFoundryVTT/MzW/templates/sheets/partials/ammunition/largeBolt.hbs" this}}
+                            {{else }}
+                                <h3>
+                                    Invalid ammo type. You shouldn't be able to see this.
+                                </h3>
+                            {{/if }}
+                        {{/if }}
+                    {{/if }}
+                {{/if }}
+            {{/if }}
+        {{/if }}
     {{/if }}
 </form>
